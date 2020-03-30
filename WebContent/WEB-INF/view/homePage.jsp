@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="md-2">
-
-        </div>
-        <div class="md-8">
-            <div class="jumbotron">
-			  <h1 class="display-4">Hello, world!</h1>
-			  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-			  <hr class="my-4">
-			  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-			</div>
-        </div>
-        <div class="md-2">
-
+    <div class="">
+        <!-- Top Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="/spring-monitoring/homePage" class="navbar-brand">E-Channel Monitoring</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                </ul>
+                <div class="float-right">
+                	<img height="60" src="D:/Spring Workspace/spring-monitoring/WebContent/src/KEB Hana Bank's Logo (Transparent Background).png">
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Welcome to E-Channel Monitoring Website</h1>
+                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <a href="/spring-monitoring/loginPage" type="button" class="btn btn-info">Login</a>
+                </div>
+            </div>
+        	<form>
+			  <div class="form-group">
+			    <label for="formGroupExampleInput">Example label</label>
+			    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+			  </div>
+			 </form>
         </div>
     </div>
 
