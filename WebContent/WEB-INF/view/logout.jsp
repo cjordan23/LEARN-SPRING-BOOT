@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/view.css"> 
@@ -48,19 +48,14 @@
             </div>
         </nav>
         <div class="container">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Welcome to E-Channel Monitoring Website</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                  <a href="/spring-monitoring/loginPage" type="button" class="btn btn-info">Login</a>
+            <div class="card w-50 logout-card">
+                <div class="card-body">
+                <h5 class="card-title">Logout Success</h5>
+                <p class="card-text">You have been logged out successfully</p>
+                <%-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --%>
                 </div>
-            </div>
-        	<form>
-			  <div class="form-group">
-			    <label for="formGroupExampleInput">Example label</label>
-			    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-			  </div>
-			 </form>
+            </div>    
+			  
         </div>
     </div>
 

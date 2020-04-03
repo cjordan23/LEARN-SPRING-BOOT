@@ -1,5 +1,5 @@
 package com.spring.monitoring.mvc;
-
+  
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
@@ -10,17 +10,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
-	//
+	//show homepage
 	@RequestMapping("/")
-	public String showHomePage(HttpServletRequest request, Model model){
+	public String showHomePage(){
 		return "homePage";
 	}
 	
-	//	
+	//show login page
+	private String userName;
+	private String pwd;
 	@RequestMapping("/loginPage")
-	public String showLoginPage(){
-		return "loginPage";
+	public String showLoginPage(HttpServletRequest request, Model model){
 		
+		return "loginPage";
+	}
+	
+	@RequestMapping("/logout")
+	public String showlogoutPage(){
+		return "logout";
 	}
 	
 	

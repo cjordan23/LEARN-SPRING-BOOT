@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/view.css"> 
+    <!--  -->
+    <script src="${pageContext.request.contextPath}/src/js/web.js"></script>
 </head>
 <body>
     <div class="">
         <!-- Top Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="/spring-monitoring/homePage" class="navbar-brand">E-Channel Monitoring</a>
+            <a href="/spring-monitoring/" class="navbar-brand">E-Channel Monitoring</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">User Management</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,21 +36,23 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="/spring-monitoring/logout">Logout</a>
                     </div>
                     </li>
                 </ul>
-                <div class="float-right">
-                	<img height="60" src="D:/Spring Workspace/spring-monitoring/WebContent/src/KEB Hana Bank's Logo (Transparent Background).png">
+                <div id="showDate" class="float-right">
+                	<img height="60" src="${pageContext.request.contextPath}/src/img/KEB Hana Bank's Logo (Transparent Background).png">
                 </div>
             </div>
         </nav>
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
+                <%-- Login Card --%>
                 <div class="card">
                     <div class="card-body">
-                        <form action="loginForm" method="GET">
+                        <%-- Login Form --%>
+                        <form action="loginForm" method="GET" modelAttribute="">
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label" for="inputUserName">Username</label>
                                 <div class="col-sm-8">
@@ -62,6 +67,10 @@
                             </div>
                             <button type="submit" class="btn btn-outline-success">Login</button>
                         </form>
+                        <form:form action="loginForm" modelAttribute="">
+                            Username : <form:input path="firstName"/>
+                            Username : <form:input path="firstName"/>
+                        </form:form>
                     </div>
                 </div>
             </div>
